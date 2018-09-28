@@ -67,6 +67,7 @@ public class MyController {
         logger.debug("开始微信登录");
         Map<Object, Object> map;
 
+
         String code = request.getParameter("code");
 
 
