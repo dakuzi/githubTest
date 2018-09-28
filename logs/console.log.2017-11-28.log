@@ -1,0 +1,63 @@
+[1121 16:17:17 864 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[1121 16:17:17 957 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Nov 21 16:17:17 CST 2017]; root of context hierarchy
+[1121 16:17:18 034 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[1121 16:17:18 415 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[1121 16:17:18 803 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[1121 16:17:18 805 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[1121 16:17:18 827 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[1121 16:17:19 291 ERROR] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[1121 16:17:19 356 INFO ] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[1121 16:17:19 382 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[1121 16:17:19 631 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[1121 16:17:19 862 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1994 ms
+[1121 16:17:19 915 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[1121 16:17:19 919 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:17:19 CST 2017]; parent: Root WebApplicationContext
+[1121 16:17:19 919 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[1121 16:17:20 481 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[1121 16:17:20 484 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[1121 16:17:21 484 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:17:19 CST 2017]; parent: Root WebApplicationContext
+[1121 16:17:21 589 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:17:19 CST 2017]; parent: Root WebApplicationContext
+[1121 16:17:22 761 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 2845 ms
+[1121 16:17:35 339 DEBUG] [http-bio-8081-exec-1] mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[1121 16:17:35 350 DEBUG] [http-bio-8081-exec-1] mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbefd8d] was not registered for synchronization because synchronization is not active
+[1121 16:17:35 882 DEBUG] [http-bio-8081-exec-1] spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4542776f] will not be managed by Spring
+[1121 16:17:35 884 DEBUG] [http-bio-8081-exec-1] dao.UserinfoDao.selectByExample - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4542776f]
+[1121 16:17:35 889 DEBUG] [http-bio-8081-exec-1] dao.UserinfoDao.selectByExample - ==>  Preparing: select userId, userName, password, createTime, remark from userinfo WHERE ( userName = ? and password = ? ) 
+[1121 16:17:35 929 DEBUG] [http-bio-8081-exec-1] dao.UserinfoDao.selectByExample - ==> Parameters: 大酷子(String), 123456(String)
+[1121 16:17:35 957 DEBUG] [http-bio-8081-exec-1] mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbefd8d]
+[1121 16:17:51 415 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:17:19 CST 2017]; parent: Root WebApplicationContext
+[1121 16:17:51 424 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Nov 21 16:17:17 CST 2017]; root of context hierarchy
+[1121 16:17:51 431 INFO ] [localhost-startStop-2] druid.pool.DruidDataSource - {dataSource-1} closed
+[1121 16:19:40 995 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[1121 16:19:41 106 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Nov 21 16:19:41 CST 2017]; root of context hierarchy
+[1121 16:19:41 180 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[1121 16:19:41 488 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[1121 16:19:41 876 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[1121 16:19:41 877 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[1121 16:19:41 898 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[1121 16:19:42 320 ERROR] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[1121 16:19:42 380 INFO ] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[1121 16:19:42 406 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[1121 16:19:42 638 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[1121 16:19:42 799 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1801 ms
+[1121 16:19:42 843 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[1121 16:19:42 846 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:19:42 CST 2017]; parent: Root WebApplicationContext
+[1121 16:19:42 847 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[1121 16:19:43 365 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[1121 16:19:43 368 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[1121 16:19:43 883 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:19:42 CST 2017]; parent: Root WebApplicationContext
+[1121 16:19:43 966 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:19:42 CST 2017]; parent: Root WebApplicationContext
+[1121 16:19:44 174 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 1331 ms
+[1121 16:20:01 026 DEBUG] [http-bio-8081-exec-9] ynet.controller.MyController - 开始登录
+[1121 16:20:01 027 DEBUG] [http-bio-8081-exec-9] ynet.controller.MyController - 用户名---大酷子
+[1121 16:20:01 046 DEBUG] [http-bio-8081-exec-9] mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[1121 16:20:01 056 DEBUG] [http-bio-8081-exec-9] mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@718eefbd] was not registered for synchronization because synchronization is not active
+[1121 16:20:01 628 DEBUG] [http-bio-8081-exec-9] spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@73cd5b98] will not be managed by Spring
+[1121 16:20:01 630 DEBUG] [http-bio-8081-exec-9] dao.UserinfoDao.selectByExample - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@73cd5b98]
+[1121 16:20:01 636 DEBUG] [http-bio-8081-exec-9] dao.UserinfoDao.selectByExample - ==>  Preparing: select userId, userName, password, createTime, remark from userinfo WHERE ( userName = ? and password = ? ) 
+[1121 16:20:01 675 DEBUG] [http-bio-8081-exec-9] dao.UserinfoDao.selectByExample - ==> Parameters: 大酷子(String), 123456(String)
+[1121 16:20:01 702 DEBUG] [http-bio-8081-exec-9] mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@718eefbd]
+[1121 16:20:01 704 DEBUG] [http-bio-8081-exec-9] ynet.controller.MyController - {returnCode=000000, returnMsg=成功, userInfo=Userinfo [Hash = 434339645, userid=123456, username=大酷子, password=123456, createtime=Mon Nov 20 14:42:24 CST 2017, remark=测试, serialVersionUID=1]}
+[1121 16:20:55 205 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Tue Nov 21 16:19:42 CST 2017]; parent: Root WebApplicationContext
+[1121 16:20:55 214 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Nov 21 16:19:41 CST 2017]; root of context hierarchy
+[1121 16:20:55 222 INFO ] [localhost-startStop-2] druid.pool.DruidDataSource - {dataSource-1} closed

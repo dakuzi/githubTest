@@ -1,0 +1,50 @@
+[0315 09:06:27 430 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[0315 09:06:27 603 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Thu Mar 15 09:06:27 CST 2018]; root of context hierarchy
+[0315 09:06:27 750 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[0315 09:06:28 375 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[0315 09:06:28 961 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[0315 09:06:28 962 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[0315 09:06:28 987 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[0315 09:06:28 999 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0315 09:06:29 742 ERROR] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[0315 09:06:29 844 INFO ] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[0315 09:06:29 890 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[0315 09:06:30 718 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[0315 09:06:30 983 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3505 ms
+[0315 09:06:31 040 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[0315 09:06:31 043 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Thu Mar 15 09:06:31 CST 2018]; parent: Root WebApplicationContext
+[0315 09:06:31 044 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[0315 09:06:31 525 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0315 09:06:31 826 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[0315 09:06:31 828 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[0315 09:06:31 829 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/UserInfo]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.UserInfo(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0315 09:06:31 830 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Test]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.Test(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0315 09:06:31 832 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Wxlogin]}" onto public void com.ynet.controller.WxLoginController.Wxlogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[0315 09:06:32 869 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Thu Mar 15 09:06:31 CST 2018]; parent: Root WebApplicationContext
+[0315 09:06:32 962 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Thu Mar 15 09:06:31 CST 2018]; parent: Root WebApplicationContext
+[0315 09:06:33 158 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 2118 ms
+[0315 09:09:45 799 DEBUG] [http-bio-8081-exec-3] ynet.controller.WxLoginController - 开始校验签名
+[0315 09:09:45 804 DEBUG] [http-bio-8081-exec-3] ynet.controller.WxLoginController - 签名校验通过
+[0315 09:11:48 547 DEBUG] [http-bio-8081-exec-3] ynet.controller.MyController - 开始微信登录
+[0315 09:11:48 547 DEBUG] [http-bio-8081-exec-3] ynet.controller.MyController - code---061Ts3Eo14Yn5q0KZ2Go1O0bEo1Ts3EE
+[0315 09:11:50 276 DEBUG] [http-bio-8081-exec-3] service.impl.UserInfoServiceImpl - accesstoken-----7_aMFd539nrEuCuUIEfkAHax-jXW2dM3mX0wZvFfy7kuR-jW_tnZ6SnFZ71p6mELzoqBDLRhwwKcbZanFE09QwK2aEivb0oqID9E0QJPNvYlI
+[0315 09:11:50 276 DEBUG] [http-bio-8081-exec-3] service.impl.UserInfoServiceImpl - refreshtoken-----7_NfeobzWs6yzR3BkO9-u0DIhJyGA01qp9DDjmsZwBt0EIJyB6HBuUfH7b0gheIuaxkpiljZCmBNUOFCrrkq_jkrSmM1CntSiaW91lkWl7YJI
+[0315 09:11:50 277 DEBUG] [http-bio-8081-exec-3] service.impl.UserInfoServiceImpl - openid-----o7EnI02kA6OFl1zaZcacCRBOXZjM
+[0315 09:11:50 293 DEBUG] [http-bio-8081-exec-3] mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[0315 09:11:50 305 DEBUG] [http-bio-8081-exec-3] mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34516931] was not registered for synchronization because synchronization is not active
+[0315 09:11:50 921 DEBUG] [http-bio-8081-exec-3] spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@17c4ad90] will not be managed by Spring
+[0315 09:11:50 924 DEBUG] [http-bio-8081-exec-3] dao.UserinfoDao.selectByPrimaryKey - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@17c4ad90]
+[0315 09:11:50 931 DEBUG] [http-bio-8081-exec-3] dao.UserinfoDao.selectByPrimaryKey - ==>  Preparing: select userId,userName,password,createTime,remark from userinfo where userId = ? 
+[0315 09:11:50 977 DEBUG] [http-bio-8081-exec-3] dao.UserinfoDao.selectByPrimaryKey - ==> Parameters: o7EnI02kA6OFl1zaZcacCRBOXZjM(String)
+[0315 09:11:51 004 DEBUG] [http-bio-8081-exec-3] mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34516931]
+[0315 09:11:51 006 DEBUG] [http-bio-8081-exec-3] mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[0315 09:11:51 006 DEBUG] [http-bio-8081-exec-3] mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2c6fb0] was not registered for synchronization because synchronization is not active
+[0315 09:11:51 007 DEBUG] [http-bio-8081-exec-3] spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@17c4ad90] will not be managed by Spring
+[0315 09:11:51 007 DEBUG] [http-bio-8081-exec-3] dao.UserinfoDao.selectByPrimaryKey - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@17c4ad90]
+[0315 09:11:51 007 DEBUG] [http-bio-8081-exec-3] dao.UserinfoDao.selectByPrimaryKey - ==>  Preparing: select userId,userName,password,createTime,remark from userinfo where userId = ? 
+[0315 09:11:51 008 DEBUG] [http-bio-8081-exec-3] dao.UserinfoDao.selectByPrimaryKey - ==> Parameters: o7EnI02kA6OFl1zaZcacCRBOXZjM(String)
+[0315 09:11:51 009 DEBUG] [http-bio-8081-exec-3] mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d2c6fb0]
+[0315 09:11:51 010 DEBUG] [http-bio-8081-exec-3] ynet.controller.MyController - {returnCode=000000, returnMsg=成功, user=Userinfo [Hash = 985532439, userid=o7EnI02kA6OFl1zaZcacCRBOXZjM, username=json, password=null, createtime=Tue Mar 13 10:11:34 CST 2018, remark=http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eovsbm8LgVaoyHoURGg4R3ZBd41HuN22Sibavc5MvTK4icwdCThdv06Mg3Y0n72rYtu348bnQgicQqsA/132, serialVersionUID=1]}
+[0315 14:21:14 038 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Thu Mar 15 09:06:31 CST 2018]; parent: Root WebApplicationContext
+[0315 14:21:14 054 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Thu Mar 15 09:06:27 CST 2018]; root of context hierarchy
+[0315 14:21:14 121 INFO ] [localhost-startStop-2] druid.pool.DruidDataSource - {dataSource-1} closed

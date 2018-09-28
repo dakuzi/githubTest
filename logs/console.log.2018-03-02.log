@@ -1,0 +1,118 @@
+[0302 15:24:01 619 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[0302 15:24:01 819 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Mar 02 15:24:01 CST 2018]; root of context hierarchy
+[0302 15:24:01 985 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[0302 15:24:02 570 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[0302 15:24:03 060 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[0302 15:24:03 061 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[0302 15:24:03 093 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[0302 15:24:03 108 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:24:03 808 ERROR] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[0302 15:24:03 897 INFO ] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[0302 15:24:03 934 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[0302 15:24:04 278 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[0302 15:24:04 476 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2849 ms
+[0302 15:24:04 517 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[0302 15:24:04 521 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:24:04 CST 2018]; parent: Root WebApplicationContext
+[0302 15:24:04 522 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[0302 15:24:04 859 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:24:05 187 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[0302 15:24:05 191 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[0302 15:24:05 195 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/UserInfo]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.UserInfo(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:24:05 202 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Test]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.Test(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:24:05 205 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Wxlogin]}" onto public void com.ynet.controller.WxLoginController.Wxlogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[0302 15:24:05 853 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:24:04 CST 2018]; parent: Root WebApplicationContext
+[0302 15:24:05 961 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:24:04 CST 2018]; parent: Root WebApplicationContext
+[0302 15:24:06 283 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 1765 ms
+[0302 15:24:29 052 DEBUG] [http-bio-8081-exec-3] ynet.controller.WxLoginController - 开始校验签名
+[0302 15:24:29 058 DEBUG] [http-bio-8081-exec-3] ynet.controller.WxLoginController - 签名校验通过
+[0302 15:27:43 518 INFO ] [RMI TCP Connection(8)-127.0.0.1] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:24:04 CST 2018]; parent: Root WebApplicationContext
+[0302 15:27:43 533 INFO ] [RMI TCP Connection(8)-127.0.0.1] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Mar 02 15:24:01 CST 2018]; root of context hierarchy
+[0302 15:27:43 591 INFO ] [RMI TCP Connection(8)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} closed
+[0302 15:27:50 228 INFO ] [RMI TCP Connection(8)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[0302 15:27:50 329 INFO ] [RMI TCP Connection(8)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Mar 02 15:27:50 CST 2018]; root of context hierarchy
+[0302 15:27:50 441 INFO ] [RMI TCP Connection(8)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[0302 15:27:50 847 INFO ] [RMI TCP Connection(8)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[0302 15:27:51 281 DEBUG] [RMI TCP Connection(8)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[0302 15:27:51 282 DEBUG] [RMI TCP Connection(8)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[0302 15:27:51 317 INFO ] [RMI TCP Connection(8)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[0302 15:27:51 328 INFO ] [RMI TCP Connection(8)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:27:51 843 ERROR] [RMI TCP Connection(8)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[0302 15:27:51 936 INFO ] [RMI TCP Connection(8)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[0302 15:27:51 958 DEBUG] [RMI TCP Connection(8)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[0302 15:27:52 318 DEBUG] [RMI TCP Connection(8)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[0302 15:27:52 622 INFO ] [RMI TCP Connection(8)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2391 ms
+[0302 15:27:52 662 INFO ] [RMI TCP Connection(8)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[0302 15:27:52 668 INFO ] [RMI TCP Connection(8)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:27:52 CST 2018]; parent: Root WebApplicationContext
+[0302 15:27:52 669 INFO ] [RMI TCP Connection(8)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[0302 15:27:53 067 INFO ] [RMI TCP Connection(8)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:27:53 468 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[0302 15:27:53 471 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[0302 15:27:53 473 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/UserInfo]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.UserInfo(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:27:53 474 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Test]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.Test(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:27:53 477 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Wxlogin]}" onto public void com.ynet.controller.WxLoginController.Wxlogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[0302 15:27:54 086 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:27:52 CST 2018]; parent: Root WebApplicationContext
+[0302 15:27:54 225 INFO ] [RMI TCP Connection(8)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:27:52 CST 2018]; parent: Root WebApplicationContext
+[0302 15:27:54 603 INFO ] [RMI TCP Connection(8)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 1941 ms
+[0302 15:29:40 731 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:27:52 CST 2018]; parent: Root WebApplicationContext
+[0302 15:29:40 737 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Mar 02 15:27:50 CST 2018]; root of context hierarchy
+[0302 15:29:40 744 INFO ] [localhost-startStop-2] druid.pool.DruidDataSource - {dataSource-1} closed
+[0302 15:30:15 523 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[0302 15:30:15 630 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Mar 02 15:30:15 CST 2018]; root of context hierarchy
+[0302 15:30:15 755 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[0302 15:30:16 178 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[0302 15:30:16 621 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[0302 15:30:16 622 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[0302 15:30:16 654 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[0302 15:30:16 669 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:30:17 239 ERROR] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[0302 15:30:17 318 INFO ] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[0302 15:30:17 348 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[0302 15:30:17 622 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[0302 15:30:17 823 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2296 ms
+[0302 15:30:17 887 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[0302 15:30:17 892 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:30:17 CST 2018]; parent: Root WebApplicationContext
+[0302 15:30:17 893 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[0302 15:30:18 320 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:30:18 633 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[0302 15:30:18 638 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Test]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.Test(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:30:18 643 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[0302 15:30:18 651 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/UserInfo]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.UserInfo(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:30:18 656 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Wxlogin]}" onto public void com.ynet.controller.WxLoginController.Wxlogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[0302 15:30:19 385 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:30:17 CST 2018]; parent: Root WebApplicationContext
+[0302 15:30:19 513 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:30:17 CST 2018]; parent: Root WebApplicationContext
+[0302 15:30:19 799 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 1911 ms
+[0302 15:38:30 968 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:30:17 CST 2018]; parent: Root WebApplicationContext
+[0302 15:38:30 991 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Mar 02 15:30:15 CST 2018]; root of context hierarchy
+[0302 15:38:31 045 INFO ] [localhost-startStop-2] druid.pool.DruidDataSource - {dataSource-1} closed
+[0302 15:38:54 753 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization started
+[0302 15:38:54 843 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Fri Mar 02 15:38:54 CST 2018]; root of context hierarchy
+[0302 15:38:54 935 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring.xml]
+[0302 15:38:55 247 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[0302 15:38:55 687 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\dao\UserinfoDao.class]
+[0302 15:38:55 688 DEBUG] [RMI TCP Connection(3)-127.0.0.1] spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userinfoDao' and 'com.ynet.dao.UserinfoDao' mapperInterface
+[0302 15:38:55 711 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.config.PropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+[0302 15:38:55 722 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:38:56 175 ERROR] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+[0302 15:38:56 247 INFO ] [RMI TCP Connection(3)-127.0.0.1] druid.pool.DruidDataSource - {dataSource-1} inited
+[0302 15:38:56 281 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[0302 15:38:56 541 DEBUG] [RMI TCP Connection(3)-127.0.0.1] mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\IDE\workspace-app\log4j2Project\target\MVNDemo\WEB-INF\classes\com\ynet\mapping\UserinfoDao.xml]'
+[0302 15:38:56 763 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2007 ms
+[0302 15:38:56 817 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization started
+[0302 15:38:56 820 INFO ] [RMI TCP Connection(3)-127.0.0.1] context.support.XmlWebApplicationContext - Refreshing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:38:56 CST 2018]; parent: Root WebApplicationContext
+[0302 15:38:56 821 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mvc.xml]
+[0302 15:38:57 187 INFO ] [RMI TCP Connection(3)-127.0.0.1] factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[0302 15:38:57 451 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/register]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.register(javax.servlet.http.HttpServletRequest)
+[0302 15:38:57 452 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/UserInfo]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.UserInfo(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:38:57 453 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.welcome(javax.servlet.http.HttpServletRequest)
+[0302 15:38:57 454 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Test]}" onto public java.util.Map<java.lang.Object, java.lang.Object> com.ynet.controller.MyController.Test(javax.servlet.http.HttpServletRequest) throws com.ynet.util.OApiException
+[0302 15:38:57 455 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerMapping - Mapped "{[/Wxlogin]}" onto public void com.ynet.controller.WxLoginController.Wxlogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+[0302 15:38:57 961 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:38:56 CST 2018]; parent: Root WebApplicationContext
+[0302 15:38:58 172 INFO ] [RMI TCP Connection(3)-127.0.0.1] method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:38:56 CST 2018]; parent: Root WebApplicationContext
+[0302 15:38:58 366 INFO ] [RMI TCP Connection(3)-127.0.0.1] web.servlet.DispatcherServlet - FrameworkServlet 'springMvc': initialization completed in 1548 ms
+[0302 15:39:21 257 DEBUG] [http-bio-8081-exec-4] ynet.controller.WxLoginController - 开始校验签名
+[0302 15:39:21 261 DEBUG] [http-bio-8081-exec-4] ynet.controller.WxLoginController - 签名校验通过
+[0302 15:41:53 981 DEBUG] [http-bio-8081-exec-5] ynet.controller.WxLoginController - 开始校验签名
+[0302 15:41:53 982 DEBUG] [http-bio-8081-exec-5] ynet.controller.WxLoginController - 签名校验通过
+[0302 16:56:00 733 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'springMvc-servlet': startup date [Fri Mar 02 15:38:56 CST 2018]; parent: Root WebApplicationContext
+[0302 16:56:00 779 INFO ] [localhost-startStop-2] context.support.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Fri Mar 02 15:38:54 CST 2018]; root of context hierarchy
+[0302 16:56:00 858 INFO ] [localhost-startStop-2] druid.pool.DruidDataSource - {dataSource-1} closed
